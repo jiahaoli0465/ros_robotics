@@ -206,10 +206,10 @@ if __name__ == '__main__':
     # bot.get_error(initial, final)
 
     # setep 2
-    # initial = bot.odom.old_pose
-    # bot.draw_square(0.3)
-    # final = bot.odom.old_pose
-    # bot.get_error(initial, final)
+    initial = bot.odom.old_pose
+    bot.draw_square(0.3)
+    final = bot.odom.old_pose
+    bot.get_error(initial, final)
 
     #step 3
     # bot.move_in_a_circle(0.3)
