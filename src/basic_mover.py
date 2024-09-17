@@ -5,6 +5,9 @@ from geometry_msgs.msg import Point, Pose, Twist
 from tf.transformations import euler_from_quaternion
 from my_odom import MyOdom
 
+# Video link
+# https://brandeis.zoom.us/rec/share/DkxQCg-Pt40zrQjD8Krq0hRzmbJPsjo-CfcHRCsE30r44apIXEbl2Vd55WhSLKcE.bVIZf1oTKbwmjoBV?startTime=1726179082000
+
 # BasicMover
 class BasicMover:
     def __init__(self):
@@ -160,7 +163,7 @@ class BasicMover:
         """Moves the robot in a circle with radius `r`"""
         linear_velocity = 0.2 
         
-        # Compute the angular velocity using ω = v / r
+        # Compute the angular velocity
         angular_velocity = linear_velocity / r
         
 
@@ -203,10 +206,10 @@ if __name__ == '__main__':
     # bot.get_error(initial, final)
 
     # setep 2
-    initial = bot.odom.old_pose
-    bot.draw_square(0.3)
-    final = bot.odom.old_pose
-    bot.get_error(initial, final)
+    # initial = bot.odom.old_pose
+    # bot.draw_square(0.3)
+    # final = bot.odom.old_pose
+    # bot.get_error(initial, final)
 
     #step 3
     # bot.move_in_a_circle(0.3)
